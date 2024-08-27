@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import NavigationSidebar from './components/NavigationSidebar';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <NavigationSidebar/>
+    <Dashboard/>
   </React.StrictMode>
 );
 
