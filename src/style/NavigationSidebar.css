@@ -19,6 +19,7 @@ body{
     top: 0;
     left: 0;
     padding: 6px 14px;
+    transition-duration: 0.5s;
 }
 /* part one logo_content*/
 .siderbar .logo_content .logo{
@@ -46,9 +47,6 @@ body{
    opacity: 1;
    z-index: 999;
 }
-.siderbar #logoIndividual{
-   
-}
 /* part two searchEngine for nav_list*/
 #inputSearchEngine{
     border:none;
@@ -59,7 +57,7 @@ body{
     color:#fff;
     background: #1d1b31;
     height: 100%;
-    border-radius:12px ;
+    border-radius:12px;
 }
 #iconSearch{
     position: absolute;
@@ -91,6 +89,7 @@ body{
     height: 100%;
     text-decoration: none;
     width: 100%;
+    border-radius: 12px;
 }
 .siderbar.active ul li a .links_name{
   opacity: 0;
@@ -98,10 +97,9 @@ body{
 .siderbar.active ul li a  {
   display: flex;
   justify-content: center;
-
 }
 
-.siderbar ul li a:hover {
+.siderbar ul li:hover a:hover  {
     background: #fff;
     color: #11101d;
 }
@@ -135,9 +133,7 @@ right: 11px;
 }
 .siderbar .profile_content .job_name{
     margin-left: 10px;
-    line-height: 24px;
-    
-    
+    line-height: 24px;    
 }
 .siderbar .profile_content .job_name .name{
     font-size: 18px;
@@ -156,7 +152,7 @@ right: 11px;
     background-color: #4d2424;
     border-radius: 6px;
     line-height: 50px;
-    text-align: center;
+    text-align: center;  
     opacity: 0;
     cursor: pointer;
 }
@@ -167,17 +163,22 @@ right: 11px;
     transition-delay: 0.01s;
 }
 /* part six effect when onlick icon-siderbar , ul li*/
-.siderbar.active{
-    width: 60px;
-
+.siderbar.active ,
+.siderbar.active ul li a box-icon{
+    width: 70px;
     transition-duration: 0.5s;
+    position: absolute;
 }
+
+
 /* part seven effect when onclick icon-siderbar ,  */
 .siderbar.active #log_out{
-    opacity: 0;   
+    position: absolute;
+    top:40%;
+    right:32%;
 }
 .siderbar.active .profile_content img{
-    text-align: center;
+    opacity: 0;
 }
 .siderbar.active .profile_content .job_name{
     opacity: 0;

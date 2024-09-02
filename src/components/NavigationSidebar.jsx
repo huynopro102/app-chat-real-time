@@ -65,7 +65,7 @@ function NavigationSidebar() {
         </li>
         <li>
           <a
-            href="#"
+            href="/profile"
             onMouseEnter={() => setHoveredIcon("profile")}
             onMouseLeave={() => setHoveredIcon(null)}
           >
